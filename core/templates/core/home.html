@@ -1,0 +1,256 @@
+{% extends "core/base.html" %} 
+{% load static %}
+{% block content %}
+
+<div class="container">
+  <div class="row mt-5 pb-5">
+
+   <div class="col-md-4">
+      <h1 class="firstparah1">Rent <span style="color:blue">Cameras</span> From <span style="color:blue">People</span> In Your Community</h1>
+
+      <p class="para1">Enjoy the item without the burden to own and at a fraction of the price</p>
+
+      <form class="d-flex form" role="search">
+       <input class="form-control me-2" type="search" placeholder="Search here" aria-label="Search">
+       <button class="btn btn-primary px-4" type="submit">Search</button>
+     </form>
+
+     <div class="mt-4">
+       <span style="color:blue">or</span>
+       <a href=""><button class="btn btn-md list-item-btn"type="button">List an Item</button></a>
+     </div>
+   </div>
+
+   <div class="col-md-4 offset-2">
+     <div>
+       <img src="{% static 'core/images/header image.png' %}" class="sideimg img-fluid" alt="light blue bg">
+     </div>
+   </div>
+  </div>
+
+
+<!--first section ends here-->
+<div class="row row2  pb-5">
+
+  <div class="col-md-4 mt-5 d-flex flex-column justify-content-center align-items-center">
+     <div class="img1"><img src="{% static 'core/images/image 25.png' %}" class="img2"></div>
+     <h3 class="content">Share The Joy</h3>
+     <p class="content">Grow closer, take part in the community</p>
+  </div>
+
+   <div class="col-md-4 mt-5 d-flex flex-column justify-content-center align-items-center">
+    <div class="img1 "><img src="{% static 'core/images/image 26.png' %}"></div>
+     <h3 class="content">Save Money</h3>
+     <p class="content">Buy less, Rent on demand for a fraction of the price</p>
+  </div>
+
+   <div class="col-md-4 mt-5 d-flex flex-column justify-content-center align-items-center">
+    <div class="img1"><img src="{% static 'core/images/image 27.png' %}"></div>
+     <h3 class="content">Help Planet</h3>
+     <p class="content">Live greener, Reduce the waste</p>
+  </div>
+
+</div><!--row2 ends here-->
+
+<div class="row row3 pb-5"> <!--row3(1) starts her-->
+
+ <div class="col-md-6 ">
+
+  <h1 class="firstparah1 "><span style="color:blue">Rent</span> to Save and Be Green</h1>
+  <p class="para1">Elephant Please provides a secured online platform where you can enjoy a diverse range of items at an affordable price. Renting allows you to enjoy items without worrying about budgets and storage problems. Not to mention that you can try out different things without buying all of them; for example, rent different camera lenses to obtain various effects.</p>
+  <a href="#" class="rent-link"><p>How Renting Works</p></a>
+ </div>
+
+ <div class="col-md-6">
+  <div class="position-relative">
+   <!--  First image as the background -->
+    <img src="{% static 'core/images/Bg.png' %}" class="img-fluid position-absolute top-0 end-0 w-100 bg-img1" style="z-index: 1;" alt="First Background">
+
+    <!-- Second image as the background, on top of the first -->
+    <img src="{% static 'core/images/Bg (1).png' %}" class="img-fluid position-absolute  bottom-0 end-0 w-100 bg-img2" style="z-index: 2; opacity: 0.7;" alt="Second Background">
+
+     <!-- Third image on top of the first two images -->
+   <img src="{% static 'core/images/people.png' %}" class="img-fluid position-relative mx-auto d-block bg-img3" style="z-index: 3;" alt="Top Image">
+  </div>
+
+ </div>
+ </div><!--row3(1) ends here-->
+
+
+
+ <div class="row row3 pb-5 "><!--row3(2) starts here-->
+
+  <div class="col-md-6 ">
+    <div class="position-relative">
+      <!-- First image as the background -->
+       <img src="{% static 'core/images/Bg.png' %}" class="img-fluid position-absolute top-0 start-0 w-100 bg-img1" style="z-index: 1;" alt="First Background">
+
+        <!-- Second image as the background, on top of the first -->
+         <img src="{% static 'core/images/Bg (1).png' %}" class="img-fluid position-absolute  bottom-0 start-0 w-100 bg-img2" style="z-index: 2; opacity: 0.7;" alt="Second Background">
+
+          <!-- Third image on top of the first two images -->
+         <img src="{% static 'core/images/man.png' %}" class="img-fluid position-relative bottom-0 end-0 d-block  bg-img3" style="z-index: 3;" alt="Top Image">
+     </div>
+  </div>
+
+    <div class="col-md-6 lend-col">
+  <h1 class="firstparah1">Lend To Start Earning</h1>
+  <p class="para1">Elephant Please provides a secured online platform where you can enjoy a diverse range of items at an affordable price. Renting allows you to enjoy items without worrying about budgets and storage problems. Not to mention that you can try out different things without buying all of them; for example, rent different camera lenses to obtain various effects.</p>
+  <a href="#" class=""><button class="btn btn-md btn-primary text-white px-3">List and Earn</button></a>
+ </div>
+
+ 
+ </div><!--row3(2) ends here-->
+
+
+ <div class="row row4">
+
+ <div class="col-md-8">
+   <h1 class="">Explore Item Categories</h1>
+   <p class="para1">Hover and select to view items available to be rented. From Film & Photography to Drones to Clothes & Shoes. If you can think of it, you can find it.</p>
+ </div>
+
+ <div class="col-md-4 mt-5 d-flex justify-content-end">
+    <a href="#"><button class=" btn btn-md btn-outline-primary px-3 view-all-btn">View All</button></a>
+ </div>
+ </div>
+
+
+
+ <div class="row pics-row mt-3 pb-5 g-0">
+  
+  <!-- First column with a single image -->
+  <div class="col-md-6 px-2 pb-2">
+      <div class="pic1 justify-content-center mt-4"><img src="{% static 'core/images/image 1.png' %}" class="img-fluid"></div>
+  </div>
+
+  <!-- Second column with images stacked in a row for medium and small screens -->
+  <div class="col-md-2 col-sm-6 d-flex flex-column align-items-center px-2">
+      <div class="pics2 d-flex flex-column align-items-center pt-sm-3">
+          <img src="{% static 'core/images/image 3.png' %}" class="pb-1 pt-1 img-fluid">
+          <img src="{% static 'core/images/image 4.png' %}" class="img-fluid pb-1 pt-1">
+      </div>
+  </div>
+
+  <!-- Third column with images stacked in a row for medium and small screens -->
+  <div class="col-md-2 col-sm-6 d-flex flex-column align-items-center px-2">
+      <div class="pics3 d-flex flex-column align-items-center pt-sm-3">
+          <img src="{% static 'core/images/image 5.png' %}" class="pb-1 pt-1 img-fluid">
+          <img src="{% static 'core/images/image 6.png' %}" class="img-fluid pb-1 pt-1">
+      </div>
+  </div>
+
+  <!-- Fourth column with images stacked in a row for medium and small screens -->
+   <div class="col-md-2 col-sm-6 d-flex flex-column align-items-center px-2">
+      <div class="pics4 d-flex flex-column align-items-center pt-sm-3">
+          <img src="{% static 'core/images/image 7.png' %}" class="pb-1 pt-1 img-fluid">
+          <img src="{% static 'core/images/image 8.png' %}" class="img-fluid pb-1 pt-1">
+      </div>
+      </div>
+
+   </div><!--images row ends here-->
+ 
+
+
+
+</div><!--contanier ends here-->
+
+
+
+<div class="container mt-5">
+<div class="position-relative bg-image img-fluid" style="background-image: url('{% static 'core/images/bg rectangle.png' %}'); background-size: cover; background-position: center; max-height: 400px; height: auto;">
+  
+  <div class="row align-items-center h-100">
+    <!-- Left Content Column -->
+    <div class="col-md-6 mt-5 px-5">
+      <h1 class="firstparah1">Access on the go</h1>
+      <p class="para1">Elephant please is a responsive website, open it on any browser and use it on your devices. Rent more, save more, Lend more, earn more.</p>
+    </div>
+
+    <!-- Right Image Column -->
+    <div class="col-md-6 d-flex justify-content-end">
+      <img src="{% static 'core/images/mobile.png' %}" alt="mobile img" class="img-fluid mobile-img">
+    </div>
+  </div>
+
+</div>
+</div>
+
+
+<!---->
+<div class="container-fluid my-5 py-5">
+  <!-- Responsive Background Image -->
+  <div style="background-color: #ECF7FF;">
+
+      <!-- Content inside the container -->
+      <div class="container my-5 py-5">
+          
+          <!-- First row for the title and paragraph -->
+          <div class="row mt-3">
+              <h1 class="firstparah1 text-center">Rental Reviews</h1>
+              <p class="para1 text-center">To an English person, it will seem like simplified English, as a skeptical Cambridge friend of mine told me what Occidental is.</p>
+          </div>
+
+          <!-- Second row for images -->
+          <div class="row text-center">
+              <!-- Review images with responsive layout -->
+              <div class="col-md-3  mb-3">
+                  <div class="review-img">
+                      <img src="{% static 'core/images/review1.png' %}" alt="review" class="img-fluid">
+                  </div>
+              </div>
+
+              <div class="col-md-3 mb-3">
+                  <div class="review-img">
+                      <img src="{% static 'core/images/review2.png' %}" alt="review" class="img-fluid">
+                  </div>
+              </div>
+
+              <div class="col-md-3 mb-3">
+                  <div class="review-img">
+                      <img src="{% static 'core/images/review3.png' %}" alt="review" class="img-fluid">
+                  </div>
+              </div>
+
+              <div class="col-md-3 mb-3">
+                  <div class="review-img">
+                      <img src="{% static 'core/images/review4.png' %}" alt="review" class="img-fluid">
+                  </div>
+              </div>
+          </div>
+
+      </div>
+  </div>
+</div>
+
+<!---->
+<div class="container">
+
+  <div class="row">
+
+    <div class="col-md-12">
+      <h1 class="firstparah1 text-center">Sign Up For Our Newsletter</h1>
+      <p class="para1 text-center">Sign up to receive information about our special offers and news. You can unsubscribe at any time. For more details about how we use your information, view our Privacy Policy.</p>
+    </div>
+
+  </div>
+    
+  <div class="row pb-5">
+       <div class="col-md-3"> </div>
+
+        <div class="col-md-6 py-3">
+           <form class="d-flex form" role="submit">
+               <input class="form-control me-2" type="search" placeholder="Email Address..." aria-label="Search">
+               <a href="#"><button class="btn btn-primary d-sm-none d-block btn-sm ">Submit</button></a>
+               <a href="#"><button class="btn btn-primary d-none d-sm-block ">Submit</button></a>
+            </form>
+           <p class="para1 text-left pt-5">We will never share your email with anyone.</p>
+        </div>
+
+        <div class="col-md-3"></div>
+  </div>
+
+ 
+</div>
+
+{% endblock content %}

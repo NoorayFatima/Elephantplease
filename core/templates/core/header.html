@@ -1,0 +1,31 @@
+{% load static %}
+<nav class="navbar navbar-expand-sm"> <!-- Change to navbar-expand-md -->
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <div class="collapse navbar-collapse mx-4" id="navbarTogglerDemo01">
+      <!-- Logo with fixed height and responsive width -->
+      <a class="navbar-brand " href=" #"><img src="{% static 'core/images/logo.png' %}" style="max-width: 100px; width: auto; height: 50px;"></a>
+
+      <!-- Left side navbar items -->
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav-left">
+        <li class="nav-item ">
+          <a class="nav-link active " aria-current="page" href="#">Rent</a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link " href="#">Lend</a>
+        </li>
+      </ul>
+
+      <!-- Right side buttons with responsive layout -->
+      <ul class="navbar-nav ms-auto ">
+        <div class="d-grid gap-2 d-md-flex d-sm-flex justify-content-md-end mx-5">
+          <button class="btn  me-md-4 me-sm-0 w-auto buttons btn1" type="button">Sign in</button>
+          <button class="btn w-auto buttons btn2 " type="button">Sign Up</button>
+        </div>
+      </ul>
+    </div>
+  </div>
+</nav>
