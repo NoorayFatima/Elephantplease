@@ -1,0 +1,126 @@
+{% extends "core/base.html" %} 
+{% load static %}
+
+{% block content %}
+<div class="container">
+
+   <div class="row pb-2">
+      <div class="col-md-12">
+        <p><a href="{% url 'home' %}">Home</a> &gt; <a href="{%  url 'lend' %}">How lending works</a></p>
+      </div>
+   </div>
+
+
+   <div class="row">
+
+       <div class="col-md-12 ">
+
+         <div class="bg-blue pt-5" style="background-color: rgb(10,91,152); border-radius: 25px;height:320px; " >
+             <h1 class="text-center text-white fw-bold fs-1 pt-5">Lend to start earning</h1>
+             <p  class="text-center text-white pt-3">Rent a Camera from a fellow photographer in Hong Kong. Over 50%<br> Cheaper Than Traditional Rental Spend less & Enjoy more</p>
+          </div>
+        </div>
+   </div>
+
+
+   <div class="row mt-5">
+        <div class="col-md-6 mt-5">
+             <h1 class="text-black fs-2">Before Lending</h1>
+             <p class="p1"><span class="text-primary">List an item: </span> Look around your home and Fill out a few fields to describe your item.</p>
+             <p class="p1"><span class="text-primary">Update availability: </span>Remember to update the dates your item will not be available to allow users to have a better understanding of the availability.</p>
+             <p class="p1"><span class="text-primary">Respond promptly: </span>Answer queries users may have to increase the likelihood of a rental.</p>
+        </div>
+
+        <div class="col-md-6">
+            <div class="position-relative">
+                <!-- First image as the background -->
+                 <img src="{% static 'core/images/Bg.png' %}" class="img-fluid position-absolute bottom-0 start-0 rent-bg" style="z-index: 1;" alt="First Background">
+            
+                  <!-- Second image , on top of the first -->
+                   <img src="{% static 'core/images/lend1.png' %}" class="img-fluid position-relative d-block  rent1" style="z-index: 2;" alt="Second Background">
+
+            </div>
+            
+        </div>
+   </div>
+
+
+   <div class="row mt-5">
+
+       <div class="col-md-6">
+           <div class="position-relative">
+               <!-- First image as the background -->
+                <img src="{% static 'core/images/Bg.png' %}" class="img-fluid position-absolute bottom-0 start-0 rent-bg" style="z-index: 1;" alt="First Background">
+        
+               <!-- Second image , on top of the first -->
+               <img src="{% static 'core/images/lend2.png' %}" class="img-fluid position-relative d-block  rent1" style="z-index: 2;" alt="Second Background">
+
+            </div>
+        
+       </div>
+
+
+      <div class="col-md-6 mt-5 during-rental" style="">
+           <h1 class="text-black fs-2">When Lending</h1>
+           <p class="p1"><span class="text-primary">Meet the User: </span> Arrange to meet the user to handover the item.</p>
+           <p class="p1"><span class="text-primary">Keep in touch: </span> Arrange in advance for the return of the item. Contact Elephant Please if there are any issues.</p>
+           <p class="p1"><span class="text-primary">Retrieve the item:</span>To avoid surcharges and penalties, return the item on time. Message the lender and request if you would like the item for a few more days.
+           </p>
+      </div>
+   </div>
+
+
+
+
+   
+   <div class="row mt-5">
+       <div class="col-md-6 mt-5">
+          <h1 class="text-black fs-2">After lending</h1>
+          <p class="p1"><span class="text-primary">Rate the User: </span> Take this opportunity and review the lender for other members of the community.</p>
+          <p class="p1"><span class="text-primary">Repeat: </span>Search and rent again!</p>
+          
+       </div>
+
+      <div class="col-md-6">
+            <div class="position-relative">
+                <!-- First image as the background -->
+                <img src="{% static 'core/images/Bg.png' %}" class="img-fluid position-absolute bottom-0 start-0 rent-bg" style="z-index: 1;" alt="First Background">
+        
+              <!-- Second image , on top of the first -->
+               <img src="{% static 'core/images/rent3.png' %}" class="img-fluid position-relative d-block  rent1" style="z-index: 2;" alt="Second Background">
+
+            </div>
+        </div>
+    </div>
+
+
+     
+    <div class="row mt-5">
+
+      <div class="col-md-6">
+          <div class="position-relative">
+              <!-- First image as the background -->
+               <img src="{% static 'core/images/Bg.png' %}" class="img-fluid position-absolute bottom-0 start-0 rent-bg" style="z-index: 1;" alt="First Background">
+     
+               <!-- Second image , on top of the first -->
+               <img src="{% static 'core/images/rent4.png' %}" class="img-fluid position-relative d-block  rent1" style="z-index: 2;" alt="Second Background">
+           </div>
+       </div>
+
+
+      <div class="col-md-6 mt-5 during-rental" style="">
+           <h1 class="text-black fs-2">Play your Part</h1>
+           <p class="p1">Renting on Elephant Please isn't just convenient and cost-saving. By purchasing less and renting more, you're also contributing to a circular economy, making better use of resources and helping to protect this wonderful planet we call home.</p>
+           <div class="d-flex justify-content-end ">
+            <button class="btn btn-md sr-btn ">List and earn</button>
+           </div>
+        </div>
+
+    </div>
+
+
+
+   
+</div>
+
+{% endblock content %}

@@ -17,13 +17,17 @@ padding-left: 20px;
 	padding-right: 20px;
 }
 .btn1{
-   border: 1px solid black;
+   border: 1px black;
+   border-radius: 14px;
+
    	
 }
 
 .btn2{
-   background-color: pink;
-   color: darkblue;
+   background-color: #ffffff;
+   border: 1px black;
+   color:rgb(10,91,152);
+   border-radius: 14px;
 }
 
 /*navbar css ends here*/
@@ -48,7 +52,7 @@ padding-left: 20px;
 }
 
 .firstparah1 span{
-	color: darkblue;
+	color: #005494CC;
 	font:  monospace;
 	font-size: 50px;
 	font-weight: bold;
@@ -79,7 +83,7 @@ color:  #4A525A;
 
 .list-item-btn{
    border: 1px solid black;
-	color: blue;
+	color: #005494CC;
 	border-radius: 5px;
 	margin-left: 20px;
 }
@@ -152,7 +156,7 @@ height: 318px;
 }
 
 .para1{
-	color: silver;
+	color: #4A525A;
 	font-size: 18px;
 	line-height: 1.5;
 }
@@ -179,7 +183,7 @@ height: 318px;
 
 .view-all-btn{
 	text-decoration: none;
-	color: blue;
+	color: #005494CC;
 	border-radius: 12px;
 }
 
@@ -224,11 +228,11 @@ height: 318px;
 	height: auto;
 }
 @media (max-width: 768px) {
-    .firstparah1 {
+    .mobileh1h1 {
         font-size: 1.5rem; 
     }
 
-    .para1 {
+    .mobilepara {
         font-size: 1rem; 
     }
 
@@ -238,11 +242,11 @@ height: 318px;
 }
 
 @media (max-width: 576px) {
-    .firstparah1 {
+    .mobileh1 {
         font-size: 1rem; 
     }
 
-    .para1 {
+    .mobilepara {
         font-size: 0.9rem; 
     }
 
@@ -277,7 +281,7 @@ height: 318px;
 
 .social-media a:nth-child(2){
 
-	background-color: darkblue;
+	background-color: #005494CC;
 	border-radius: 50%;
 	max-width: 50px;
 	color: white;
@@ -289,3 +293,144 @@ height: 318px;
    text-decoration: none;
 }
 /*footer css ends here*/
+/*Rent.html css starts here*/
+
+.p1{
+	color: lightslategray !important;
+}
+.rent-bg {
+    max-width: 350px !important;
+	height: 300px;
+}
+
+.rent1 {
+	max-width: 442px;
+	width: 100%;
+	height: 333px;
+}
+
+.sr-btn{
+	background-color: rgb(10,91,152);
+    color: white;
+	max-width: 150px;
+	width: 100%;
+	height: 60px;
+	border-radius: 14px;
+}
+
+.sr-btn:hover{
+	cursor: pointer;
+	background-color: rgb(10,91,152);
+	color: white;
+}
+
+/*search page css starts here*/
+.category{
+	max-width: 250px;
+	height: 250px;
+}
+
+@media(max-width:576px){
+	.category-col{
+	   display: flex;
+	   justify-content: center;
+	}
+}	
+
+/*Sign in form css starts here*/
+.split-background{
+	padding: 2rem;
+	border:0px;
+	border-radius: 28px;
+	width: 800px;
+	height: 700px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-bg{
+	background-color: #ffffff;
+	max-width: 480px;
+	height: 517px;
+	border-radius: 14px;
+	box-shadow: 10px 10px 20px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+ .user-box {
+	position: relative;
+  }
+  
+ .user-box input {
+	width: 100%;
+	padding: 10px 0;
+	font-size: 16px;
+	color: #fff;
+	margin-bottom: 30px;
+	border: none;
+	border-bottom: 1px solid black;
+	outline: none;
+	background: transparent;
+  }
+  
+ .user-box label {
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 10px 0;
+	font-size: 16px;
+	color: #6D6D6D;
+	pointer-events: none;
+	transition: .5s;
+  }
+  
+  .user-box input:focus ~ label,
+ .user-box input:valid ~ label {
+	top: -20px;
+	left: 0;
+	color: black;
+	font-size: 12px;
+  }
+
+
+.sign-in-btn{
+	background-color:#005494 ;
+}
+
+.forget-p{
+	text-decoration: none;
+	color: #005494;
+}
+
+
+.social-icons {
+	display: flex;
+	justify-content: center;
+	gap: 10px;
+  }
+
+  .social-icons a {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 90px;
+	height: 40px;
+	border: 1px solid gray;
+	border-radius: 1px;
+	
+	text-decoration: none;
+  }
+
+ 
+
+
+  .social-icons a.facebook {
+	color: #4267B2; /* Facebook Blue */
+  }
+
+  .social-icons a.twitter {
+	color: #1DA1F2; /* Twitter Blue */
+  }
+  
+    
+	
+  
