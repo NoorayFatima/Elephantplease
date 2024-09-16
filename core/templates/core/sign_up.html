@@ -1,0 +1,80 @@
+{% extends "core/base.html" %}
+{% load static %}
+{% block content %}
+
+<div class="container-fluid d-flex align-items-center justify-content-center">
+    <!-- Sign Up Form with Split Background -->
+    <div class="split-background" style="background: linear-gradient(to bottom, #005494 50%, white 50%);">
+        <div class="d-flex justify-content-center">
+            <span class="text-white text-center fw-bold fs-6">Elephant <br>Please</span>
+            <img src="{% static 'core/images/elephant.png' %}" style="max-width: 50px; width: auto; height: 50px;">
+        </div>
+
+        <div class="row d-flex align-items-center justify-content-center">
+            <form method="post" class="form-bg py-lg-5 px-lg-5 py-md-4 px-md-4 py-sm-3 px-sm-3 mt-2">
+                {% csrf_token %}
+                <h2 class="text-black text-center mt-4 mb-4">Sign Up</h2>
+
+                <!-- Display form errors here -->
+                {% if form.errors %}
+                    <div class="alert alert-danger">
+                        {{ form.errors }}
+                    </div>
+                {% endif %}
+
+                <!-- First Name and Last Name Fields -->
+                <div class="user-box-container d-lg-flex d-md-block justify-content-between">
+                    <div class="user-box user-box1">
+                        {{ form.first_name }}
+                        {{ form.first_name.label_tag }}
+                    </div>
+                    <div class="user-box user-box1">
+                        {{ form.last_name }}
+                        {{ form.last_name.label_tag }}
+                    </div>
+                </div>
+
+                <!-- Email Field -->
+                <div class="user-box">
+                    {{ form.email }}
+                    {{ form.email.label_tag }}
+                </div>
+
+                <!-- Password Field -->
+                <div class="user-box">
+                    {{ form.password }}
+                    {{ form.password.label_tag }}
+                </div>
+
+                <!-- Confirm Password Field -->
+                <div class="user-box">
+                    {{ form.confirm_password }}
+                    {{ form.confirm_password.label_tag }}
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit" class="btn sign-in-btn w-100 text-white">Sign Up</button>
+                <p class="text-black text-center">or</p>
+
+                <!-- Social Icons -->
+                <div class="social-icons mt-3">
+                    <a href="#" class="google">
+                        <!-- Google Icon SVG -->
+                        <!-- (Your existing SVG code here) -->
+                    </a>
+                    <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+                </div>
+
+                <!-- Sign In Link -->
+                <div>
+                    <p class="text-center text-black fs-6 mt-lg-3 mt-md-2 py-lg-4">
+                        Already have an account? <a href="{% url 'sign_in' %}" class="text-decoration-none"><span class="text-#005494">Sign In</span></a>
+                    </p>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}

@@ -10,14 +10,14 @@
 
       <p class="para1">Enjoy the item without the burden to own and at a fraction of the price</p>
 
-      <form class="d-flex form" role="search">
+      <form class="d-flex form-nav" role="search">
        <input class="form-control me-2" type="search" placeholder="Search here" aria-label="Search">
-       <button class="btn btn-primary px-4" type="submit">Search</button>
+       <button class="btn btn-primary " type="submit">Search</button>
      </form>
 
      <div class="mt-4">
-       <span style="color:blue">or</span>
-       <a href=""><button class="btn btn-md list-item-btn"type="button">List an Item</button></a>
+       <span style="color:#005494">or</span>
+       <a href=""><button class="btn btn-md list-item-btn no-hover"type="button">List an Item</button></a>
      </div>
    </div>
 
@@ -56,7 +56,7 @@
 
  <div class="col-md-6 ">
 
-  <h1 class="firstparah1 "><span style="color:blue">Rent</span> to Save and Be Green</h1>
+  <h1 class="firstparah1 "><span style="color:#005494">Rent</span> to Save and Be Green</h1>
   <p class="para1">Elephant Please provides a secured online platform where you can enjoy a diverse range of items at an affordable price. Renting allows you to enjoy items without worrying about budgets and storage problems. Not to mention that you can try out different things without buying all of them; for example, rent different camera lenses to obtain various effects.</p>
   <a href="#" class="rent-link"><p>How Renting Works</p></a>
  </div>
@@ -96,7 +96,7 @@
     <div class="col-md-6 lend-col">
   <h1 class="firstparah1">Lend To Start Earning</h1>
   <p class="para1">Elephant Please provides a secured online platform where you can enjoy a diverse range of items at an affordable price. Renting allows you to enjoy items without worrying about budgets and storage problems. Not to mention that you can try out different things without buying all of them; for example, rent different camera lenses to obtain various effects.</p>
-  <a href="#" class=""><button class="btn btn-md btn-primary text-white px-3">List and Earn</button></a>
+  <a href="#" class=""><button class="btn btn-md text-white px-3" style="background-color: #005494">List and Earn</button></a>
  </div>
 
  
@@ -111,7 +111,7 @@
  </div>
 
  <div class="col-md-4 mt-5 d-flex justify-content-end">
-    <a href="#"><button class=" btn btn-md btn-outline-primary px-3 view-all-btn">View All</button></a>
+    <a href="#"><button class=" btn no-hover px-3 view-all-btn">View All</button></a>
  </div>
  </div>
 
@@ -119,36 +119,60 @@
 
  <div class="row pics-row mt-3 pb-5 g-0">
   
-  <!-- First column with a single image -->
-  <div class="col-md-6 px-2 pb-2">
+  <div class="col-md-4 px-2 pb-2 col-lg-4">
       <div class="pic1 justify-content-center mt-4"><img src="{% static 'core/images/image 1.png' %}" class="img-fluid"></div>
   </div>
 
-  <!-- Second column with images stacked in a row for medium and small screens -->
-  <div class="col-md-2 col-sm-6 d-flex flex-column align-items-center px-2">
-      <div class="pics2 d-flex flex-column align-items-center pt-sm-3">
+
+  <div class="col-md-8 col-lg-8">
+     
+     <div class="row">
+         
+       <div class="col-md-4 col-lg-4">
+          <div class="pics2 d-flex align-items-center pt-sm-3">
           <img src="{% static 'core/images/image 3.png' %}" class="pb-1 pt-1 img-fluid">
+      </div>
+       </div>
+
+        <div class="col-md-4 col-lg-4">
+         <div class="pics2 d-flex align-items-center pt-sm-3">
           <img src="{% static 'core/images/image 4.png' %}" class="img-fluid pb-1 pt-1">
       </div>
-  </div>
+       </div>
 
-  <!-- Third column with images stacked in a row for medium and small screens -->
-  <div class="col-md-2 col-sm-6 d-flex flex-column align-items-center px-2">
-      <div class="pics3 d-flex flex-column align-items-center pt-sm-3">
+        <div class="col-md-4 col-lg-4">
+           <div class="pics3 d-flex align-items-center pt-sm-3">
           <img src="{% static 'core/images/image 5.png' %}" class="pb-1 pt-1 img-fluid">
+      </div>
+       </div>
+     </div>
+
+     <div class="row">
+       
+
+        <div class="col-md-4 col-lg-4 ">
+          <div class="pics3 d-flex align-items-center pt-sm-3">
           <img src="{% static 'core/images/image 6.png' %}" class="img-fluid pb-1 pt-1">
       </div>
-  </div>
+       </div>
 
-  <!-- Fourth column with images stacked in a row for medium and small screens -->
-   <div class="col-md-2 col-sm-6 d-flex flex-column align-items-center px-2">
-      <div class="pics4 d-flex flex-column align-items-center pt-sm-3">
+        <div class="col-md-4 col-lg-4">
+         <div class="pics4 d-flex  align-items-center pt-sm-3">
           <img src="{% static 'core/images/image 7.png' %}" class="pb-1 pt-1 img-fluid">
+      </div>
+       </div>
+
+        <div class="col-md-4 col-lg-4">
+         <div class="pics4 d-flex  align-items-center pt-sm-3">
           <img src="{% static 'core/images/image 8.png' %}" class="img-fluid pb-1 pt-1">
       </div>
-      </div>
+       </div>
 
-   </div><!--images row ends here-->
+     </div>
+  </div>
+
+
+</div><!--images row ends here-->
  
 
 
@@ -239,11 +263,10 @@
        <div class="col-md-3"> </div>
 
         <div class="col-md-6 py-3">
-           <form class="d-flex form" role="submit">
-               <input class="form-control me-2" type="search" placeholder="Email Address..." aria-label="Search">
-               <a href="#"><button class="btn btn-primary d-sm-none d-block btn-sm ">Submit</button></a>
-               <a href="#"><button class="btn btn-primary d-none d-sm-block ">Submit</button></a>
-            </form>
+          <form class="d-flex form-nav" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search here" aria-label="Search">
+            <button class="btn btn-primary " type="submit">Search</button>
+          </form>
            <p class="para1 text-left pt-5">We will never share your email with anyone.</p>
         </div>
 
